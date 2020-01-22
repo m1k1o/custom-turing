@@ -2,6 +2,10 @@
 
 Lightweight C IDE in browser.
 
+**EXPERIMENTAL**: Should not be used in Production.
+
+![](screenshot.png)
+
 ## How to run using docker
 Build docker image using:
 ```
