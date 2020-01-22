@@ -9,7 +9,7 @@ RUN apt-get -y install valgrind
 
 COPY . .
 
-VOLUME "/var/www/html"
+VOLUME "/var/www/html/data"
 
 RUN chown -R www-data:www-data . \
     && a2enmod rewrite

@@ -10,8 +10,13 @@ docker build --tag custom-turing .
 
 And then run your image:
 ```
-docker run -p 8080:8080 custom-turing
+docker run \
+	-p 8080:8080 \
+	-v ./data:/var/www/html/data \
+	custom-turing
 ```
+
+In data folder will be your program stored.
 
 Navigate browser to `http://localhost:8080`.
 
