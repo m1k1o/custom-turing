@@ -1,0 +1,11 @@
+Options -Indexes
+
+<Files ~ "\.(c|in|out|pid)$">
+	Order Allow,Deny
+	Deny from All
+</Files>
+
+<Files ~ "^(\.|Dockerfile|README\.md)">
+	Order Allow,Deny
+	Deny from All
+</Files>
